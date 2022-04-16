@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 
 import './Register.css'
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
 
@@ -42,6 +43,7 @@ const Register = () => {
 
             </form>
             <p>Already Have an Account? <Link to="/login" className='text-danger pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
