@@ -25,11 +25,11 @@ const Checkout = () => {
     const handlePlaceOrder = event => {
         event.preventDefault();
         const order = {
-            email: user.email;
+            email: user.email,
             service: service.name,
             serviceId: serviceId,
-            address: event.target.address.value;
-            phone: event.target.phone.value;
+            address: event.target.address.value,
+            phone: event.target.phone.value
         }
     }
 
